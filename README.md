@@ -16,7 +16,7 @@ SRC=/Applications/Utilities/Terminal.app/Contents/Resources/Fonts
 DEST=./fonts
 
 for font in $(ls $SRC/SFMono*.otf); do
-    fontforge -script <path/to/font-patcher> -c "$font" -out $DEST;
+    fontforge -script <path/to/font-patcher> -s -c "$font" -out $DEST;
 done
 ```
 
